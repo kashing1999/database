@@ -2,22 +2,27 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="query.css">
+        <meta charset= "utf-8">
+        <meta name="viewport">
     </head>
     <body>
         <div class="container">
-            <br>
+        <h1 class="display-4">City</h1>
+            <hr>
             <form action="query.php" method="POST">
-                Name: <input type="text" name = "name">
-                CountryCode: <input type="text" name="countrycode"><br>
-                District: <input type="text" name="district">
-                Population: <input type="text" name="population">
-                <button class="submit-button btn btn-outline-secondary">Query</button>
+                <div class = "row">
+                    <div class="col-sm-3">Name: &nbsp;&nbsp;<input id= "searchdetailbox" type="text" name = "name"></div>
+                    <div class="col-sm-2">CountryCode: &nbsp;<input id= "searchdetailbox" type="text" name="countrycode"></div>
+                    <div class="col-sm-3">District: &nbsp;<input id= "searchdetailbox" type="text" name="district"></div>
+                    <div class="col-sm-2">Population: <input id= "searchdetailbox" type="text" name="population">&nbsp;</div>
+            
+                    <div class="col-sm-2" id="searchbox">
+                        <button class=" submit-button btn btn-outline-secondary">Search</button>
+                    </div>
+                </div>
             </form>
             <br>
-            <form action="insert.html">
-                <button class="submit-button btn btn-outline-secondary">Insert</button>
-            </form>
-            <br><br>
             <?php
                 include 'config.php';           
 
@@ -89,7 +94,6 @@
                         }
                         $sql .="true ORDER by Name;";
                     }
-                    echo $sql;
                     return $sql;
                 }
 

@@ -1,0 +1,14 @@
+#searchdetailbox{
+    width:100%;
+}
+
+#searchdetail{
+    border-style: solid;
+    border-radius: 60px;
+    border-color: aquamarine;
+}
+
+#searchbox{
+    margin-top: 20px;
+}
+
