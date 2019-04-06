@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    </head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">    </head>
     <body>
         <div class="container">
             <br>
             <h1 class="display-4">Insert into City</h1>
             <hr>
 
-                <form action="insert.php" method="POST">
+                <form action="performInsertCity.php" method="POST">
 
                     <div class="form-group">
                         <label for="usr">Name:</label>
@@ -29,8 +28,13 @@
                         <label for="usr">Population:</label>
                         <input type="text" class="form-control" name="population" required>
                     </div>
-            
+                    <form>
                     <button class=" submit-button btn btn-outline-secondary" >Submit</button>
+                    </form>
+                    <form action="queryCity.php">
+                        <button class="submit-button btn btn-outline-secondary" >Back</button>
+                    </form>
+        
                 </form>
         </div>
     </body>

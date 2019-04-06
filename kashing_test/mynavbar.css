@@ -1,0 +1,39 @@
+
+@media only screen and (max-width: 768px) { 
+    body{
+        margin-top: 200px;
+    }
+
+    /*---Lang button css---*/
+    .linkLangTable {
+    	color: #878787;
+	    background: transparent;
+	} 
+	.linkLangTable:hover {
+	    color: #4C4C4C;
+	    background: transparent;
+	} 
+	/*---Lang button css---*/
+}
+
+/*only run code when bigger than 768*/
+@media only screen and (min-width: 768px) { 
+	body{
+        margin-top: 50px;
+    }
+
+    .dropdown:hover .dropdown-menu {
+            display: block;
+    }
+
+     /*---Lang button css---*/
+	.linkLangTable {
+	    background: #ffffff;
+	} 
+
+	.linkLangTable:hover {
+	    background: #F0F0F0;
+	} 
+	/*---Lang button css---*/
+}
+
