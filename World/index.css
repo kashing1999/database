@@ -1,0 +1,34 @@
+@media only screen and (max-width: 768px) { 
+    body{
+        margin-top: 200px;
+    }
+}
+
+
+/*only run code when bigger than 768*/
+@media only screen and (min-width: 768px) {
+	.dropdown:hover .dropdown-menu {
+	        display: block;
+	}
+}
+
+
+
+/*---Lang button css---*/
+.linkLangTable {
+    background: #ffffff;
+} 
+
+.linkLangTable:hover {
+    background: #F0F0F0;
+} 
+/*---End Lang button css---*/
+
+.jumbotron{
+    text-align: center;
+    font-family: sans-serif;
+    padding: 30px 30px;
+    margin-top: 50px;
+    margin-bottom: 0;
+
+}

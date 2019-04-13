@@ -1,0 +1,16 @@
+
+
+
+/*Tab button color on mouse hover*/
+.tab button:hover{ 
+	background-color: grey;
+}
+
+/*Tabutton active state*/
+.tab button.active{
+	background-color: red;
+}
+
+.tabcontent{
+	display:none;
+}
